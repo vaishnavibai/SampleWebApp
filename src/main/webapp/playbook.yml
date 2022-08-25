@@ -1,8 +1,0 @@
----
-- name: uninstall and install httpd server
-  hosts: web-server2
-  tasks:
-  - name: remove httpd
-    yum: pkg=httpd state=absent
-  - name: install httpd
-    yum: pkg=httpd state=present
