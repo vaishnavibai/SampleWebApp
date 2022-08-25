@@ -1,6 +1,6 @@
 ---
 - name: uninstall and install httpd server
-  hosts: web-server2
+  hosts: webserver2
   
   tasks:
   - name: Remove httpd
