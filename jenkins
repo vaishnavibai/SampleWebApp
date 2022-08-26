@@ -21,7 +21,7 @@ pipeline {
             }
             stage('ansible-management') {
                 steps {
-                    ansiblePlaybook become: true, credentialsId: 'ec2-user-ansible', disableHostKeyChecking: true, installation: 'Ansible', inventory: 'hosts', playbook: 'install_httpd.yml'
+                    ansiblePlaybook become: true, credentialsId: 'git-key', disableHostKeyChecking: true, installation: 'Ansible', inventory: 'hosts', playbook: 'install_httpd.yml'
                 }
              }
            }
